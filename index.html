@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div > h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+        section.grid {
+            display: grid;
+            background-color: gray;
+            max-width: 500px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        section.gt {
+            display: grid;
+           grid-template-columns: 100px auto 50px;
+           grid-template-rows: repeat(2, 50px);
+        }
+
+        .item {
+            margin: 5px;
+            font-size: 20px;
+            text-align: center;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>display: block;</h1>
+        <section class="grid">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>display: grid;</h1>
+        <section class="grid">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template-columns: 200px 200px;</h1>
+        <section class="grid gt">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>display: block;</h1>
+        <section class="grid">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+    </div>
+</body>
+</html>

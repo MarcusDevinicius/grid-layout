@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+article#grid-geral {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 150px 1500px
+}
+
+#cabecalho {
+    background-color: #8A47EE;
+    background-image: linear-gradient(to right, #8A47EE, #8143dd, #8143dd, #8a55da, #965bee, #a069f2);
+    padding: 20px;
+}
+#cabecalho > img {
+    width: 230px;
+}
+
+#cabecalho > nav > ul {
+    list-style-type: none;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#cabecalho > nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.164);
+    padding: 10px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+nav#origamis-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    gap: 40px;
+    background-color: greenyellow;
+    width: 700px;
+    overflow-x: scroll;
+}
+
+nav > a > img.origamis {
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.323);
+    transition: all .2s ease-in-out;
+}
+
+nav > a > img.origamis:hover {
+    background-color: #a573ef;
+}
+
+nav > img.anuncio {
+    width: 250px;
+}

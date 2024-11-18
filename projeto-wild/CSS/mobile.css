@@ -10,20 +10,20 @@
 html, body {
     height: 100vh;
     width: 90vw;
+    
 }
 
 article#grid-geral {
     display: grid;
-    grid-template-columns: 1fr;
     grid-template-rows: 130px 150px 3050px 600px 100px;
-    width: 100vw;
+    width: 90vw;
 }
 
 #cabecalho {
     background-color: #8A47EE;
     background-image: linear-gradient(to right, #8A47EE, #8143dd, #8143dd, #8a55da, #965bee, #a069f2);
     padding: 20px;
-    width: 90vw;
+    width: 96.6vw;
 }
 #cabecalho > img {
     width: 230px;
@@ -52,7 +52,7 @@ nav#origamis-container {
     flex-direction: row;
     padding-left: 24px;
     gap: 40px;
-    width: 90vw;
+    width: 96.6vw;
     overflow-x: scroll;
     padding-top: 15px;
 }
@@ -225,7 +225,7 @@ nav > img.anuncio {
 
 footer {
     background: linear-gradient(135deg, #6814e6, #8751d8, #a16af4);
-    width: 90vw;
+    width: 96.6vw;
 }
 
 footer > p {

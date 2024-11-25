@@ -1,6 +1,0 @@
-@media screen and (width >= 992px){
-    article#grid-geral {
-        display: grid;
-        grid-template-rows: repeat(3, 300px, 600px, 300px);
-    }
-}

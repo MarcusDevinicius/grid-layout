@@ -1,0 +1,218 @@
+/* 8945EE
+9151F1
+9658F2
+A066F6
+AF7BFB*/
+
+
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 90vw;
+    height: 100vh;
+}
+
+img {
+    width: 100px;
+}
+
+article {
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 108px 1fr 100px;
+}
+
+header {
+    background: linear-gradient(135deg, #8945EE, #9151F1, #9658F2, #A066F6, #AF7BFB);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+header > img {
+    width: 200px;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+header > nav > ul a {
+    margin: 15px;
+    margin-right: 3px;
+    font-size: 21px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.082);
+    border-radius: 5px;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+
+header > nav > ul a:hover {
+    background-color: rgba(0, 0, 0, 0.54);
+}
+
+#origamis-container {
+    background-color: #fafafa;
+    display: grid;
+    justify-content: center;
+}
+
+#origamis-container > a {
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    margin-top: 29px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.164);
+    transition: all .2s ease-in-out;
+    background-color: white;
+}
+
+#origamis-container > a:hover {
+    background-color: #B07DFB;
+}
+
+#center {
+    background-color: blue;
+    width: 99vw;
+    display: grid;
+    grid-template-columns: repeat(3, 305px 910px 305px);
+}
+
+main {
+    background-color: white;
+}
+
+main #primeira-linha {
+    display: grid;
+    grid-template-columns: 400px 300px;
+    grid-template-rows: repeat(2, 50px 10px);
+    margin: 20px;
+    margin-top: 30px;
+
+    column-gap: 20px;
+}
+
+main #primeira-linha #titulo h1{
+    font-family: 'Vollkorn';
+    font-size: 3.79em;
+    color: #B07DFB;
+    align-self: self-start;
+    height: 60px;
+    line-height: 56px;
+}
+
+main #primeira-linha #titulo p {
+    color: #B07DFB;
+    font-family: 'Vollkorn';
+    font-style: italic;
+}
+
+main #caracteristicas {
+    margin-left: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 70px 70px);
+    column-gap: 40px;
+}
+
+main #caracteristicas #container-k, #container-a {
+    display: grid;
+    grid-template-columns: repeat(1, 40px);
+    grid-template-rows: repeat(2, 70% 30%);
+    grid-row: 2;
+    background-color: white;
+    font-family: 'Vollkorn';
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.311);
+    height: 98px;
+    width: 75px;
+}
+
+main #caracteristicas .numerok, .numeroa {
+    background: linear-gradient(135deg, #8945EE, #9151F1, #9658F2, #A066F6, #AF7BFB);
+    font-size: 50px;
+    width: 75px;
+    text-align: center;
+    color: #af7cf9;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+main #caracteristicas .rotulok, .rotuloa {
+    color: #af7cf9;
+    text-align: center;
+    width: 75px;
+    line-height: 30px;
+}
+
+aside#anuncio-container {
+    background-color: #fafafa;
+    display: grid;
+    grid-template-rows: repeat(2, 230px);
+    justify-content: center;
+}
+
+aside#anuncio-container img {
+    width: 240px;
+    border-radius: 7px;
+    margin-top: 28px;
+}
+
+div#segunda-linha-grid {
+    background-color: goldenrod;
+    margin: 10px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns:  455px 455px;
+    grid-template-rows: 100px 450px;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Vollkorn';
+    font-size: 20px;
+    line-height: 35px;
+}
+
+p#paragrafo-1 {
+    grid-column: span 2; 
+    background-color: red;
+    max-width: 96%;
+}
+
+img#lobo-1 {
+    grid-row: span 2;
+    max-width: 100%;
+    width: 400px;
+}
+
+p#paragrafo-2 {
+    grid-row: span 1;
+    background-color: gray;
+    width: 300px;
+    color: #B28BFB;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Vollkorn';
+    font-size: 20px;
+    background: linear-gradient(135deg, #8945EE, #9151F1, #9658F2, #A066F6, #AF7BFB);
+}

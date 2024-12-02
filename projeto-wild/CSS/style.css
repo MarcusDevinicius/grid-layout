@@ -63,16 +63,19 @@ header > nav > ul a:hover {
 }
 
 #origamis-container {
+    padding-top: 29px;
     background-color: #fafafa;
     display: grid;
+    row-gap: 20px;
+    grid-template-rows: repeat(6, 150px);
     justify-content: center;
 }
 
 #origamis-container > a {
     display: flex;
     justify-content: center;
-    width: 130px;
-    margin-top: 29px;
+    width: 148px;
+    height: 148px;
     padding: 20px;
     border-radius: 7px;
     box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.164);
@@ -118,6 +121,7 @@ main #primeira-linha #titulo p {
     color: #B07DFB;
     font-family: 'Vollkorn';
     font-style: italic;
+    font-size: 15px;
 }
 
 main #caracteristicas {
@@ -175,10 +179,11 @@ div#segunda-linha-grid {
     background-color: goldenrod;
     margin: 10px;
     display: grid;
-    column-gap: 20px;
-    grid-template-columns:  455px 455px;
-    grid-template-rows: 100px 450px;
+    column-gap: 1px;
+    grid-template-columns:  430px 433px;
+    grid-template-rows: 100px 120px 390px 200px 170px 450px 450px 450px;
     padding: 20px;
+    column-gap: 10px;
 }
 
 p {
@@ -190,22 +195,89 @@ p {
 p#paragrafo-1 {
     grid-column: span 2; 
     background-color: red;
-    max-width: 96%;
+    max-width: 93%;
+    font-size: 19.3px;
+    margin-top: -20px;
+    
 }
 
 img#lobo-1 {
     grid-row: span 2;
     max-width: 100%;
-    width: 400px;
+    width: 410px;
+    border-radius: 7px;
 }
 
 p#paragrafo-2 {
     grid-row: span 1;
     background-color: gray;
-    width: 300px;
+    width: 299px;
+    height: 100px;
     color: #B28BFB;
     font-size: 15px;
-    line-height: 17px;
+    line-height: 24px;
+    font-size: 1em;
+}
+
+img#lobo-2 {
+    width: 400px;
+    height: 380px;
+    border-radius: 7px;
+}
+
+p#paragrafo-3 {
+    line-height: 30px;
+}
+
+p#paragrafo-4 {
+    line-height: 30px;
+}
+ 
+blockquote#paragrafo-5-roxo{
+    grid-column: span 2;
+    background: linear-gradient(135deg, #8945EE, #9151F1, #9658F2, #A066F6, #AF7BFB);
+    height: 136px;
+    width: 854px;
+    border-radius: 7px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+blockquote#paragrafo-5-roxo > p {
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+ul#lista-roxa {
+    background: linear-gradient(135deg, #8945EE, #9151F1, #9658F2, #A066F6, #AF7BFB);
+    border-radius: 7px;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(6, 50px);
+    align-content: center;
+    justify-content: center;
+    height: 400px;
+    width: 396px;
+    
+}
+
+ul#lista-roxa > li {
+    color: rgb(255, 255, 255);
+    font-family: Courier, monospace;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.259);
+    width: 315px;
+    height: 50px;
+    padding: 5px;
+    line-height: 50px;
 }
 
 footer {

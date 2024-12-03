@@ -176,14 +176,13 @@ aside#anuncio-container img {
 }
 
 div#segunda-linha-grid {
-    background-color: goldenrod;
     margin: 10px;
     display: grid;
     column-gap: 1px;
-    grid-template-columns:  430px 433px;
-    grid-template-rows: 100px 120px 390px 200px 170px 450px 450px 450px;
+    grid-template-columns:  400px 423px;
+    grid-template-rows: 100px 100px 350px 200px 136px 151px 221px 360px;
     padding: 20px;
-    column-gap: 10px;
+    grid-gap: 30px;
 }
 
 p {
@@ -193,8 +192,7 @@ p {
 }
 
 p#paragrafo-1 {
-    grid-column: span 2; 
-    background-color: red;
+    grid-column: span 2;
     max-width: 93%;
     font-size: 19.3px;
     margin-top: -20px;
@@ -210,7 +208,6 @@ img#lobo-1 {
 
 p#paragrafo-2 {
     grid-row: span 1;
-    background-color: gray;
     width: 299px;
     height: 100px;
     color: #B28BFB;
@@ -257,6 +254,7 @@ blockquote#paragrafo-5-roxo > p {
 }
 
 ul#lista-roxa {
+    grid-row: span 2;
     background: linear-gradient(135deg, #8945EE, #9151F1, #9658F2, #A066F6, #AF7BFB);
     border-radius: 7px;
     list-style-type: none;
@@ -272,15 +270,36 @@ ul#lista-roxa {
 ul#lista-roxa > li {
     color: rgb(255, 255, 255);
     font-family: Courier, monospace;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.259);
-    width: 315px;
+    width: 320px;
     height: 50px;
-    padding: 5px;
+    padding: 7px;
     line-height: 50px;
 }
 
+p#paragrafo-6 {
+    font-size: 19px;
+    height: 150px;
+    line-height: 31px;
+}
+
+p#paragrafo-7 {
+    font-size: 19px;
+    height: 150px;
+    line-height: 31px;
+}
+
+img#lobo-3 {
+    grid-column: span 2;
+    width: 850px;
+    height: 360px;
+    border-radius: 7px;
+    justify-self: center;
+}
+
 footer {
+    color: white;
     display: grid;
     justify-content: center;
     align-items: center;
